@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Brew City Games</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button">
+        <b>BCG</b> Brew City Games</a>
+
+      <div class="w3-right w3-hide-small">
+        <a onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button" style="width:auto;">Login</a>
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <marquee>
+    <h1 class="w3-font-white">Brew City Games</h1>
+  </marquee>
+  <!--game-->
+  <div align="center">
+    <iframe src="https://cloudgames.com/games/html5/village-story-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com"
+      width="845" height="483" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+  <!-- MODAL-->
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="https://cdn.shopify.com/s/files/1/0645/6597/products/clouds_pillow_grande.jpg?v=1472577100" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname">
+          <b>Username</b>
+        </label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw">
+          <b>Password</b>
+        </label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" formaction="profile.html">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot
+          <a href="#">password?</a>
+        </span>
+      </div>
+    </form>
+  </div>
+
+
+  <Script src="scripts.js"></Script>
+
+</body>
+
+</html>
